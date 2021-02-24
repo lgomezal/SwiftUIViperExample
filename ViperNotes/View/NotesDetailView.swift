@@ -6,15 +6,23 @@
 //
 
 import SwiftUI
-
+ 
 struct NotesDetailView: View {
+    
+    var note: NoteViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack() {
+            Text("Title: \(note.title)")
+            Text("Body: \(note.body)")
+            Spacer()
+        }
+        .navigationBarTitle(note.date)
     }
 }
 
-struct NotesDetailView_Previews: PreviewProvider {
+/*struct NotesDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NotesDetailView()
     }
-}
+}*/

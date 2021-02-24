@@ -21,9 +21,10 @@
 		BA12CF8F25E691670048F583 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA12CF8E25E691670048F583 /* NoteViewModel.swift */; };
 		BA12CF9425E6917A0048F583 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA12CF9325E6917A0048F583 /* DataLayer.swift */; };
 		BA12CF9925E6918A0048F583 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA12CF9825E6918A0048F583 /* CoreDataStack.swift */; };
-		BAFD4DF025E6C28A001AEB48 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD4DEF25E6C28A001AEB48 /* ContentView.swift */; };
 		BAFD4E0925E6C3A4001AEB48 /* NotesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD4E0825E6C3A4001AEB48 /* NotesListView.swift */; };
 		BAFD4E1125E6C3C2001AEB48 /* NotesDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD4E1025E6C3C2001AEB48 /* NotesDetailView.swift */; };
+		BAFD4E1725E6C4D2001AEB48 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD4E1525E6C4D2001AEB48 /* Note+CoreDataClass.swift */; };
+		BAFD4E1825E6C4D2001AEB48 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFD4E1625E6C4D2001AEB48 /* Note+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +65,10 @@
 		BA12CF8E25E691670048F583 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		BA12CF9325E6917A0048F583 /* DataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayer.swift; sourceTree = "<group>"; };
 		BA12CF9825E6918A0048F583 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		BAFD4DEF25E6C28A001AEB48 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BAFD4E0825E6C3A4001AEB48 /* NotesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesListView.swift; sourceTree = "<group>"; };
 		BAFD4E1025E6C3C2001AEB48 /* NotesDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDetailView.swift; sourceTree = "<group>"; };
+		BAFD4E1525E6C4D2001AEB48 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BAFD4E1625E6C4D2001AEB48 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,14 +123,16 @@
 				BA12CF3B25E690070048F583 /* SceneDelegate.swift */,
 				BA12CF7E25E690EA0048F583 /* Utils */,
 				BA12CF7D25E690E00048F583 /* Model */,
-				BA12CF7C25E690D90048F583 /* Router */,
 				BA12CF7B25E690C90048F583 /* Interactor */,
-				BA12CF7A25E690C10048F583 /* Presenter */,
 				BA12CF7925E690A60048F583 /* View */,
+				BA12CF7A25E690C10048F583 /* Presenter */,
+				BA12CF7C25E690D90048F583 /* Router */,
 				BA12CF4225E6900B0048F583 /* Assets.xcassets */,
 				BA12CF4725E6900B0048F583 /* LaunchScreen.storyboard */,
 				BA12CF4A25E6900B0048F583 /* Info.plist */,
 				BA12CF3F25E690070048F583 /* ViperNotes.xcdatamodeld */,
+				BAFD4E1525E6C4D2001AEB48 /* Note+CoreDataClass.swift */,
+				BAFD4E1625E6C4D2001AEB48 /* Note+CoreDataProperties.swift */,
 				BA12CF4425E6900B0048F583 /* Preview Content */,
 			);
 			path = ViperNotes;
@@ -163,7 +167,6 @@
 		BA12CF7925E690A60048F583 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				BAFD4DEF25E6C28A001AEB48 /* ContentView.swift */,
 				BAFD4E0825E6C3A4001AEB48 /* NotesListView.swift */,
 				BAFD4E1025E6C3C2001AEB48 /* NotesDetailView.swift */,
 			);
@@ -342,12 +345,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA12CF8F25E691670048F583 /* NoteViewModel.swift in Sources */,
+				BAFD4E1825E6C4D2001AEB48 /* Note+CoreDataProperties.swift in Sources */,
 				BA12CF3A25E690070048F583 /* AppDelegate.swift in Sources */,
-				BAFD4DF025E6C28A001AEB48 /* ContentView.swift in Sources */,
 				BAFD4E1125E6C3C2001AEB48 /* NotesDetailView.swift in Sources */,
 				BA12CF3C25E690070048F583 /* SceneDelegate.swift in Sources */,
 				BA12CF9925E6918A0048F583 /* CoreDataStack.swift in Sources */,
 				BA12CF9425E6917A0048F583 /* DataLayer.swift in Sources */,
+				BAFD4E1725E6C4D2001AEB48 /* Note+CoreDataClass.swift in Sources */,
 				BA12CF4125E690070048F583 /* ViperNotes.xcdatamodeld in Sources */,
 				BA12CF8525E691370048F583 /* NotesInteractor.swift in Sources */,
 				BA12CF8025E691250048F583 /* NotesPresenter.swift in Sources */,

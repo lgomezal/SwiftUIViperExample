@@ -6,15 +6,27 @@
 //
 
 import SwiftUI
-
+ 
 struct NotesListView: View {
+    
+    @ObservedObject var presenter: NotesPresenter
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+              ForEach (presenter.noteViewModels, id: \.id) { item in
+                NavigationLink(item.title, destination: self.presenter.detailView(note: item))
+              }
+              .onDelete(perform: presenter.delete)
+            }
+            .navigationBarTitle("Notes", displayMode: .inline)
+            .navigationBarItems(trailing: presenter.topButton())
+        }
     }
 }
 
-struct NotesListView_Previews: PreviewProvider {
+/*struct NotesListView_Previews: PreviewProvider {
     static var previews: some View {
         NotesListView()
     }
-}
+}*/
