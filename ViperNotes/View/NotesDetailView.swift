@@ -20,9 +20,3 @@ struct NotesDetailView: View {
         .navigationBarTitle(note.date)
     }
 }
-
-/*struct NotesDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        NotesDetailView()
-    }
-}*/

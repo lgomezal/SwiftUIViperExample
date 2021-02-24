@@ -24,9 +24,3 @@ struct NotesListView: View {
         }
     }
 }
-
-/*struct NotesListView_Previews: PreviewProvider {
-    static var previews: some View {
-        NotesListView()
-    }
-}*/
